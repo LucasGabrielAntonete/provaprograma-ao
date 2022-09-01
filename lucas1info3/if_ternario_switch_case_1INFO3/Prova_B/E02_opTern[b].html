@@ -1,0 +1,29 @@
+<script>
+    //USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO
+    
+    //PROBLEMA: Tabela de Correção de Preço
+
+    //Peça para o usuário informar o valor da residência que deseja comprar. Peça também para ele informar em quantos meses pagará o financiamento da casa.
+    //Considere que:
+    //Se o número de meses for até 120 (inclusive), o juro a ser aplicado será de 55%.
+    //Se o número de meses for até 240 (inclusive), o juro a ser aplicado será de 65%.
+    //Se o número de meses for acima de 240, o juro a ser aplicado será de 85%.
+    //Apresente o valor final a ser pago pela residência, considerando o juro estabelecido para a quantidade de meses de financiamento.
+
+    //ENTRADA
+
+    const valor = Number(prompt("Informe o valor da casa"));
+    const meses = Number(prompt("Informe em quantos meses voce fez o financiamento"));
+    //PROCESSAMENTO
+
+const juros1 = valor + (valor * 55/100);
+const juros2 = valor + (valor * 65/100);
+const juros3 = valor + (valor * 85/100);
+
+
+(meses <= 120) ? alert(`o valor da casa sem o juros fica ${valor}, mas com os juros fica R$${juros1}`)
+: (meses <= 240) ? alert(`O valor sem juros fica ${valor}, mas com os juros fica R$${juros2}`)
+: alert(`O valor da casa é ${valor}, mas com os juros fica R$${juros3}`)
+    //SAÍDA
+
+</script>
